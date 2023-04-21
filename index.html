@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Climate+Crisis&family=Kanit:ital,wght@0,700;1,400&family=Pacifico&family=Poppins:wght@500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Climate+Crisis&family=Kanit:ital,wght@0,700;1,400&family=Pacifico&family=Pathway+Extreme:wght@500&family=Poppins:wght@500&display=swap");
+      * {
+        font-family: "Pathway Extreme", sans-serif;
+      }
+      #heading {
+        font-family: "Pacifico", cursive;
+      }
+    </style>
+    <!-- tailwind cdn starts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind cdn ends -->
+    <!-- daisyui starts here -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- daisyui ends here -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- intro starts -->
+    <header class="bg-gray-950 flex justify-evenly">
+      <div class="">
+        <img src="images/messi_bg.png" alt="" />
+      </div>
+      <div class="text-white flex flex-col justify-center items-center">
+        <h1 id="heading" class="text-5xl text-orange-600 mb-5">
+          Select your Best Five
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sit
+          earum quasi cupiditate ducimus sequi itaque qui cum ipsum voluptates
+          soluta praesentium nesciunt nam fugit eligendi aliquid alias assumenda
+        </p>
+      </div>
+      <div class="flex items-center w-11/12">
+        <img src="images/mbappe_bg.png" alt="" />
+      </div>
+    </header>
+    <!-- intro ends -->
+    <main class="bg-gray-800">
+      <section class="p-10 flex gap-24">
+        <div class="grid grid-cols-3 gap-x-24 gap-y-10">
+          <div
+            class="card card-compact w-64 h-72 bg-base-100 shadow-xl rounded-lg bg-gray-950"
+          >
+            <figure>
+              <img class="" src="images/messi_card.jpg" alt="Messi" />
+            </figure>
+            <div class="card-body text-white">
+              <h2 class="card-title">Lionel Messi</h2>
+              <p>36 Goals &dot; 120 Assist</p>
+              <div class="card-actions justify-center w-5/6">
+                <button class="btn btn-primary select-btn">Select</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card card-compact w-64 h-72 bg-base-100 shadow-xl rounded-lg bg-gray-950"
+          >
+            <figure>
+              <img class="" src="images/mbappe_card.jpg" alt="Messi" />
+            </figure>
+            <div class="card-body text-white">
+              <h2 class="card-title">Kylian Mbappe</h2>
+              <p>36 Goals &dot; 120 Assist</p>
+              <div class="card-actions justify-center w-5/6">
+                <button class="btn btn-primary select-btn">Select</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card card-compact w-64 h-72 bg-base-100 shadow-xl rounded-lg bg-gray-950"
+          >
+            <figure>
+              <img class="" src="images/neymar_card.jpg" alt="Messi" />
+            </figure>
+            <div class="card-body text-white">
+              <h2 class="card-title">Neymar jr</h2>
+              <p>36 Goals &dot; 120 Assist</p>
+              <div class="card-actions justify-center w-5/6">
+                <button class="btn btn-primary select-btn">Select</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card card-compact w-64 h-72 bg-base-100 shadow-xl rounded-lg bg-gray-950"
+          >
+            <figure>
+              <img class="" src="images/sergio_card.jpg" alt="Messi" />
+            </figure>
+            <div class="card-body text-white">
+              <h2 class="card-title">Sergio Ramos</h2>
+              <p>36 Goals &dot; 120 Assist</p>
+              <div class="card-actions justify-center w-5/6">
+                <button class="btn btn-primary select-btn">Select</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card card-compact w-64 h-72 bg-base-100 shadow-xl rounded-lg bg-gray-950"
+          >
+            <figure>
+              <img class="" src="images/emi_card.jpg" alt="Messi" />
+            </figure>
+            <div class="card-body text-white">
+              <h2 class="card-title">Emi martinez</h2>
+              <p>36 Goals &dot; 120 Assist</p>
+              <div class="card-actions justify-center w-5/6">
+                <button class="btn btn-primary select-btn">Select</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card card-compact w-64 h-72 bg-base-100 shadow-xl rounded-lg bg-gray-950"
+          >
+            <figure>
+              <img class="" src="images/renato_card.jpg" alt="Messi" />
+            </figure>
+            <div class="card-body text-white">
+              <h2 class="card-title">Renato Sanches</h2>
+              <p>36 Goals &dot; 120 Assist</p>
+              <div class="card-actions justify-center w-5/6">
+                <button class="btn btn-primary select-btn">Select</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-white bg-transparent w-96">
+          <div class="bg-gray-950 mb-7 h-72 rounded-lg px-7">
+            <h3 class="text-center pt-6 text-2xl font-semibold">Selected-V</h3>
+            <p class="text-center pt-3 pb-5">You can only select 5 players</p>
+            <ul id="list"></ul>
+          </div>
+          <div class="bg-gray-950 p-5">
+            <div class="mb-6">
+              <h3 class="text-center py-6 text-2xl font-semibold">Budget</h3>
+              <div class="flex justify-between">
+                <span class="mr-2 mb-2">Per Player</span>
+                <input
+                  id="player-cost"
+                  class="border-2 bg-transparent mb-2"
+                  type="text"
+                />
+              </div>
+              <button id="cal-btn" class="btn btn-primary">Calculate</button>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2">
+                <span>Player Expense</span>
+                <span>$ <span id="cost">1000</span></span>
+              </div>
+              <div class="flex justify-between mb-2">
+                <span class="mr-2">Manager</span>
+                <input
+                  id="manager-cost"
+                  class="border-2 bg-transparent"
+                  type="text"
+                />
+              </div>
+              <div class="flex justify-between mb-2">
+                <span class="mr-2">Coach</span>
+                <input
+                  id="coach-cost"
+                  class="border-2 bg-transparent"
+                  type="text"
+                />
+              </div>
+              <button id="total" class="btn btn-primary">
+                Calculate Total
+              </button>
+              <div class="flex justify-between">
+                <h4>Total</h4>
+                <div>
+                  <span>$ <span id="total-cost">10000</span> </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="py-10 bg-gray-950 text-white text-center">
+      <p>Copyright &copy; 2022. All Rights Reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
