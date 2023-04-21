@@ -28,22 +28,40 @@ for(let i=0;i<btn.length;i++){
     });
 }
 document.getElementById('cal-btn').addEventListener('click',function(){
-    const playerCost = parseFloat(document.getElementById('player-cost').value);
-    if(isNaN(playerCost) || (playerCost+'') === ''){
+    const playerCost = document.getElementById('player-cost').value;
+    let str = false;
+    let playerCostNum;
+    try{
+        playerCostNum = parseFloat(playerCost);
+    }catch(err){
+        str = true;
+    }
+    if(isNaN(playerCost) || str){
         alert('Please enter a valid number');
     }
     else{
-        playerTotal = playerCost * (cnt-1);
+        playerTotal = playerCostNum * (cnt-1);
         cost.innerText = playerTotal;
     }
 });
 document.getElementById('total').addEventListener('click',function(){
-    const managerCost = parseFloat(document.getElementById('manager-cost').value);
-    const coachCost = parseFloat(document.getElementById('coach-cost').value);
-    if((isNaN(managerCost) || (managerCost+'') === '') || (isNaN(coachCost) || (coachCost+'') === '')){
+    const managerCost = document.getElementById('manager-cost').value;
+    const coachCost = document.getElementById('coach-cost').value;
+    let str = false;
+    let managerCostNum;
+    let coachCostNum;
+    try{
+        managerCostNum = parseFloat(managerCost);
+        coachCostNum = parseFloat(coachCost);
+    }catch(err){
+        str = true;
+    }
+    if(isNaN(managerCost) || isNaN(coachCost) || str){
         alert('Please enter a valid number');
     }
-    const total = playerTotal + managerCost + coachCost;
-    const totalCost = document.getElementById('total-cost');
-    totalCost.innerText = total;
+    else{
+        const total = playerTotal + managerCostNum + coachCostNum;
+        const totalCost = document.getElementById('total-cost');
+        totalCost.innerText = total;
+    }
 });
